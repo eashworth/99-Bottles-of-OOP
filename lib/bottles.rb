@@ -1,11 +1,13 @@
 class Bottles
   def verse(num_bottles)
-    if num_bottles == 99
-      "99 bottles of beer on the wall, 99 bottles of beer.\nTake one down and pass it around, 98 bottles of beer on the wall.\n"
-    elsif num_bottles == 89
-      "89 bottles of beer on the wall, 89 bottles of beer.\nTake one down and pass it around, 88 bottles of beer on the wall.\n"
+    bob = "bottles of beer"
+    otw = "on the wall"
+    take = "Take one down and pass it around"
+
+    if num_bottles > 2
+      "#{num_bottles} #{bob} #{otw}, #{num_bottles} #{bob}.\n#{take}, #{num_bottles - 1} #{bob} #{otw}.\n"
     else
-      "2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer on the wall.\n"
+      "#{num_bottles} #{bob} #{otw}, #{num_bottles} #{bob}.\n#{take}, #{num_bottles - 1} bottle of beer #{otw}.\n"
     end
   end
 end
