@@ -22,7 +22,7 @@ VERSE
     expected = <<-VERSE
 2 bottles of beer on the wall, 2 bottles of beer.
 Take one down and pass it around, 1 bottle of beer on the wall.
-VERSE
+    VERSE
     assert_equal expected, ::Bottles.new.verse(2)
   end
 
@@ -30,7 +30,7 @@ VERSE
     expected = <<-VERSE
 1 bottle of beer on the wall, 1 bottle of beer.
 Take it down and pass it around, no more bottles of beer on the wall.
-VERSE
+    VERSE
     assert_equal expected, ::Bottles.new.verse(1)
   end
 
@@ -38,7 +38,7 @@ VERSE
     expected = <<-VERSE
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
-VERSE
+    VERSE
     assert_equal expected, ::Bottles.new.verse(0)
   end
 
@@ -139,7 +139,7 @@ Take one down and pass it around, 77 bottles of beer on the wall.
 Take one down and pass it around, 76 bottles of beer on the wall.
 
 76 bottles of beer on the wall, 76 bottles of beer.
-Take one down and pass it around, 75 bottles of beer on the wall.   
+Take one down and pass it around, 75 bottles of beer on the wall.
 
 75 bottles of beer on the wall, 75 bottles of beer.
 Take one down and pass it around, 74 bottles of beer on the wall.

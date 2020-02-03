@@ -25,4 +25,8 @@ class Bottles
     end
     song.join("\n")
   end
+
+  def song
+    verses(99, 0)
+  end
 end
