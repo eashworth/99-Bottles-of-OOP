@@ -17,6 +17,10 @@ class Bottles
   end
 
   def verses(num_bottles_first_verse, num_bottles_last_verse)
-    "#{verse(num_bottles_first_verse)}\n#{verse(num_bottles_last_verse)}"
+    if num_bottles_first_verse - num_bottles_last_verse > 1
+      "#{verse(num_bottles_first_verse)}\n#{verse(num_bottles_first_verse - 1)}\n#{verse(num_bottles_last_verse)}"
+    else
+      "#{verse(num_bottles_first_verse)}\n#{verse(num_bottles_last_verse)}"
+    end
   end
 end
