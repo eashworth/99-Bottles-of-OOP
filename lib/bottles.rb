@@ -25,11 +25,11 @@ class Bottles
     if num_bottles > 2
       more_than_2_bottles_verse(num_bottles)
     elsif num_bottles == 2
-      two_bottles_verse(num_bottles)
+      two_bottles_verse
     elsif num_bottles == 1
-      one_bottle_verse(num_bottles)
+      one_bottle_verse
     else
-      no_bottles_verse(num_bottles)
+      no_bottles_verse
     end
   end
 
@@ -39,15 +39,15 @@ private
     "#{num_bottles} #{@bobs} #{@otw}, #{num_bottles} #{@bobs}.\n#{@take}, #{num_bottles - 1} #{@bobs} #{@otw}.\n"
   end
 
-  def two_bottles_verse(num_bottles)
-    "#{num_bottles} #{@bobs} #{@otw}, #{num_bottles} #{@bobs}.\n#{@take}, #{num_bottles - 1} #{@bob} #{@otw}.\n"
+  def two_bottles_verse
+    "2 #{@bobs} #{@otw}, 2 #{@bobs}.\n#{@take}, 1 #{@bob} #{@otw}.\n"
   end
 
-  def one_bottle_verse(num_bottles)
-    "#{num_bottles} #{@bob} #{@otw}, #{num_bottles} bottle of beer.\nTake it down and pass it around, no more #{@bobs} #{@otw}.\n"
+  def one_bottle_verse
+    "1 #{@bob} #{@otw}, 1 bottle of beer.\nTake it down and pass it around, no more #{@bobs} #{@otw}.\n"
   end
 
-  def no_bottles_verse(num_bottles)
+  def no_bottles_verse
     "No more #{@bobs} #{@otw}, no more #{@bobs}.\nGo to the store and buy some more, 99 #{@bobs} #{@otw}.\n"
   end
 end
