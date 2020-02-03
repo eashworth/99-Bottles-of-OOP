@@ -12,7 +12,11 @@ class Bottles
     elsif num_bottles == 1
       "#{num_bottles} #{bob} #{otw}, #{num_bottles} bottle of beer.\nTake it down and pass it around, no more #{bobs} #{otw}.\n"
     else
-      "No more #{bobs} #{otw}, No more #{bobs}.\nGo to the store and buy some more, 99 #{bobs} #{otw}.\n"
+      "No more #{bobs} #{otw}, no more #{bobs}.\nGo to the store and buy some more, 99 #{bobs} #{otw}.\n"
     end
+  end
+
+  def verses(num_bottles_first_verse, num_bottles_second_verse)
+    "\n#{verse(num_bottles_first_verse)}\n#{verse(num_bottles_second_verse)}"
   end
 end

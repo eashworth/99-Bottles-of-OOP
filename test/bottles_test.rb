@@ -43,7 +43,6 @@ VERSE
   end
 
   def test_a_couple_verses
-    skip
     expected = <<-VERSES
 
 99 bottles of beer on the wall, 99 bottles of beer.
