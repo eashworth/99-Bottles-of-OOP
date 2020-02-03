@@ -1,19 +1,38 @@
 class Bottles
-  def verse(num_bottles)
-    bobs = "bottles of beer"
-    bob = "bottle of beer"
-    otw = "on the wall"
-    take = "Take one down and pass it around"
 
+  def initialize
+    @bobs = "bottles of beer"
+    @bob = "bottle of beer"
+    @otw = "on the wall"
+    @take = "Take one down and pass it around"
+  end
+
+  def verse(num_bottles)
     if num_bottles > 2
-      "#{num_bottles} #{bobs} #{otw}, #{num_bottles} #{bobs}.\n#{take}, #{num_bottles - 1} #{bobs} #{otw}.\n"
+      more_than_2_bottles_verse(num_bottles)
     elsif num_bottles == 2
-      "#{num_bottles} #{bobs} #{otw}, #{num_bottles} #{bobs}.\n#{take}, #{num_bottles - 1} #{bob} #{otw}.\n"
+      two_bottles_verse(num_bottles)
     elsif num_bottles == 1
-      "#{num_bottles} #{bob} #{otw}, #{num_bottles} bottle of beer.\nTake it down and pass it around, no more #{bobs} #{otw}.\n"
+      one_bottle_verse(num_bottles)
     else
-      "No more #{bobs} #{otw}, no more #{bobs}.\nGo to the store and buy some more, 99 #{bobs} #{otw}.\n"
+      no_bottles_verse(num_bottles)
     end
+  end
+
+  def more_than_2_bottles_verse(num_bottles)
+    "#{num_bottles} #{@bobs} #{@otw}, #{num_bottles} #{@bobs}.\n#{@take}, #{num_bottles - 1} #{@bobs} #{@otw}.\n"
+  end
+
+  def two_bottles_verse(num_bottles)
+    "#{num_bottles} #{@bobs} #{@otw}, #{num_bottles} #{@bobs}.\n#{@take}, #{num_bottles - 1} #{@bob} #{@otw}.\n"
+  end
+
+  def one_bottle_verse(num_bottles)
+    "#{num_bottles} #{@bob} #{@otw}, #{num_bottles} bottle of beer.\nTake it down and pass it around, no more #{@bobs} #{@otw}.\n"
+  end
+
+  def no_bottles_verse(num_bottles)
+    "No more #{@bobs} #{@otw}, no more #{@bobs}.\nGo to the store and buy some more, 99 #{@bobs} #{@otw}.\n"
   end
 
   def verses(num_bottles_first_verse, num_bottles_last_verse)
