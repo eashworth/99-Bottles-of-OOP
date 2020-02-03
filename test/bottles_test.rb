@@ -157,7 +157,7 @@ Take one down and pass it around, 71 bottles of beer on the wall.
 Take one down and pass it around, 70 bottles of beer on the wall.
 
 70 bottles of beer on the wall, 70 bottles of beer.
-Take one down and pass it around, 69 bottles of beer on the wall
+Take one down and pass it around, 69 bottles of beer on the wall.
 
 69 bottles of beer on the wall, 69 bottles of beer.
 Take one down and pass it around, 68 bottles of beer on the wall.
@@ -368,7 +368,7 @@ Take it down and pass it around, no more bottles of beer on the wall.
 
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
-SONG
+    SONG
     assert_equal expected, ::Bottles.new.song
   end
 end
