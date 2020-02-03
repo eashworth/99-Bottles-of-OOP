@@ -16,7 +16,7 @@ class Bottles
     end
   end
 
-  def verses(num_bottles_first_verse, num_bottles_second_verse)
-    "\n#{verse(num_bottles_first_verse)}\n#{verse(num_bottles_second_verse)}"
+  def verses(num_bottles_first_verse, num_bottles_last_verse)
+    "#{verse(num_bottles_first_verse)}\n#{verse(num_bottles_last_verse)}"
   end
 end
