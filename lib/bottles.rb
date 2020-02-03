@@ -17,10 +17,12 @@ class Bottles
   end
 
   def verses(num_bottles_first_verse, num_bottles_last_verse)
-    if num_bottles_first_verse - num_bottles_last_verse > 1
-      "#{verse(num_bottles_first_verse)}\n#{verse(num_bottles_first_verse - 1)}\n#{verse(num_bottles_last_verse)}"
-    else
-      "#{verse(num_bottles_first_verse)}\n#{verse(num_bottles_last_verse)}"
+    song = []
+    num_bottles = num_bottles_first_verse
+    while num_bottles >= num_bottles_last_verse do
+      song.push(verse(num_bottles))
+      num_bottles -= 1
     end
+    song.join("\n")
   end
 end
