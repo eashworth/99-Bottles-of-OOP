@@ -68,7 +68,6 @@ VERSES
   end
 
   def test_the_whole_song
-    skip
     expected = <<-SONG
 99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
@@ -140,7 +139,7 @@ Take one down and pass it around, 77 bottles of beer on the wall.
 Take one down and pass it around, 76 bottles of beer on the wall.
 
 76 bottles of beer on the wall, 76 bottles of beer.
-Take one down and pass it around, 75 bottles of beer on the wall. 147   
+Take one down and pass it around, 75 bottles of beer on the wall.   
 
 75 bottles of beer on the wall, 75 bottles of beer.
 Take one down and pass it around, 74 bottles of beer on the wall.
